@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+
+    {{>header}}
+
+    <div class="main">
+
+        <div class="left-box">
+            <h4>Welcome to my weather app</h4>
+            <h2>Get the latest <span>weather</span> info of your city</h2>
+            <a href="/weather"><button>Check Now</button></a>
+        </div>
+
+        <div class="right-box">
+            <!-- <div id="animation container">
+                <script>
+                    let animation = bodymovin.loadAnimation({
+                        container : document.getElementById('animation container'),
+                        path : "/images/weatherLottie.json",
+                        render : "svg",
+                        loop : true,
+                        autoplay : true,
+                    })
+                </script>
+            </div> -->
+            <img src="images/pic.png" alt="">
+        </div>
+
+    </div>
+
+    {{>footer}}
+
+
+</body>
+</html>

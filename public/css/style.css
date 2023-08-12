@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(28, 43, 57);
+    padding: 10px 80px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo #image {
+    display: flex;
+    width: 6%;
+}
+
+.logo a img {
+    width: 100%;
+}
+
+.logo #title {
+    text-decoration: none;
+}
+
+.logo #title h4 {
+    font-size: 23px;
+    padding-left: 19px;
+    color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
+ul li a:hover {
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px)  {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        justify-content: center;
+        width: 100vw;
+    }
+    .logo #image {
+        width: 13%;
+    }
+    .logo #title h4 {
+        font-size: 18px;
+    }
+    .menu {
+        padding-top: 10px;
+    }
+    ul li a {
+        font-size: 15px;
+    }
+}
+
+
+/* ////////////////   HOME PAGE  ////////////////  */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 78%;
+}
+
+.left-box {
+    width: 60%;
+    padding-left: 85px;
+}
+
+.left-box h4 {
+    font-size: 18px;
+    color: rgb(69, 69, 69);
+}
+
+.left-box h2 {
+    font-size: 30px;
+}
+
+.left-box button {
+    padding: 15px 30px;
+    background-color: rgb(28, 43, 57);
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.left-box button:hover {
+    background-color: rgb(19, 30, 40);
+}
+
+.right-box {
+    width: 40%;
+}
+
+.right-box img {
+    width: 80%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .left-box {
+        width: 100%;
+        padding: 0px 30px;
+        text-align: center;
+    }
+    .left-box h4 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .left-box h2 {
+        font-size: 25px;
+    }
+    .right-box {
+        width: 100%;
+    }
+    .right-box img {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: -50px;
+        display: block;
+    }
+
+}
+
+
+
+
+
+/* ////////////////   ABOUT PAGE  ////////////////  */
+
+.about-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    padding: 0px 100px;
+}
+
+.about-left-box {
+    width: 50%;
+    text-align: center;
+}
+
+.about-left-box img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3)
+}
+
+.about-right-box {
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.about-right-box h1 {
+    font-size: 20px;
+}
+
+.about-right-box button {
+    padding: 15px 30px;
+    background-color: rgb(28, 43, 57);
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.about-right-box button:hover {
+    background-color: rgb(19, 30, 40);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .about-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 30px;
+    }
+    .about-left-box {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    .about-left-box img {
+        width: 75%;
+        padding: 0;
+    }
+    .about-right-box {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .about-right-box h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .about-right-box h1 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .about-right-box button {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+/* ////////////////   WEATHER PAGE  ////////////////  */
+
+
+.weather-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 78%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#cityName {
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+#submitBtn {
+    position: absolute;
+    right: 2%;
+    font-size: 15px;
+    padding: 12px 23px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(28, 43, 57);
+    color: white;
+    outline: none;
+    border: none;
+}
+#submitBtn:hover {
+    background-color: rgb(19, 30, 40);
+}
+
+.output {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.output h4 {
+    font-size: 18px;
+}
+
+.toplayer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(28, 43, 57);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.toplayer h4 {
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.temp {
+    background-color: rgb(44, 69, 91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+}
+
+.temp #city {
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.temp .info {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.temp #temperature {
+    font-size: 40px;
+}
+
+sup {
+    font-size: 25px;
+}
+
+#temp_status {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    .weather-main {
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .form {
+        margin: 20px 0px;
+    }
+    
+    #cityName {
+        font-size: 18px;
+        outline: none;
+        border: 2px solid rgb(28, 43, 57);
+    }
+    
+    #submitBtn {
+        right: 2%;
+    }
+    
+    .output h4 {
+        font-size: 18px;
+    }
+
+    .temp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .temp #city {
+        width: 100%;
+    }
+    
+    .temp .info {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    sup {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* ////////////////  FOOTER  ////////////////  */
+
+
+footer {
+    height: 60px;
+    background-color: rgb(28, 43, 57);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 80px;
+}
+
+footer h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+footer .socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+} 
+
+footer a img {
+    width: 20px;
+    filter: invert(1);
+    transition-duration: 0.2s;
+}
+
+footer a img:hover{
+    width: 25px;
+    transition-duration: 0.2s;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        margin-top: auto; 
+    }
+    footer h3 {
+        font-size: 15px;
+    }
+    footer .socials {
+        display: none;
+    }
+}
